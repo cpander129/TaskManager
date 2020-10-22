@@ -11,7 +11,8 @@ var app = express();
 
 //Database connection - try to connect and log a pass/fail result
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://admin:admin@cluster0.nihep.mongodb.net/tasks',
+const globals = require('./config/globals')
+mongoose.connect(globals.db,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true

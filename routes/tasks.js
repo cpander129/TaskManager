@@ -1,7 +1,7 @@
 //link to the express package
-var express = require('express');
+let express = require('express');
 //instantiates a new express route to handle http requests
-var router = express.Router();
+let router = express.Router();
 
 //Reference the Task model
 const Task = require('../models/task');
@@ -49,7 +49,7 @@ router.post('/add', (req, res, next) => {
 //GET tasks/delete/ - colon in the path represents a URL parameter
 router.get('/delete/:_id', (req, res, next) => {
     //store the selected id in a local variable
-    var _id = req.params._id;
+    let _id = req.params._id;
     //Use Mongoose to delete the selected document from the DB
     Task.remove({_id: _id}, (err) => {
         if (err) {
@@ -65,7 +65,7 @@ router.get('/delete/:_id', (req, res, next) => {
 //GET tasks/edit/... populate edit form with existing task values
 router.get('/edit/:_id', (req, res, next) => {
     //store the selected id in a local variable
-    var _id = req.params._id;
+    let _id = req.params._id;
     //Use the selected id to look up the matching document
     Task.findById(_id, (err, tasks) => {
         if (err) {
@@ -81,14 +81,14 @@ router.get('/edit/:_id', (req, res, next) => {
 });
 //POST /tasks/edit/:_id -> update selected task document
 router.post('/edit/:_id', (req, res, next) => {
-    var _id = req.params._id;
+    let _id = req.params._id;
     //parse checkbox to a bool
-    var complete = false;
+    let complete = false;
     if (req.body.complete == "on"){
         complete = true;
     }
     //instantiate a task Object with the new values from the submission
-    var task = new Task({
+    let task = new Task({
         _id: _id,
         name: req.body.name,
         priority: req.body.priority,

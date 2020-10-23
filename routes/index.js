@@ -1,7 +1,7 @@
 //link to the express package
-var express = require('express');
-//instanciates a new express route to handle http requests
-var router = express.Router();
+let express = require('express');
+//instantiates a new express route to handle http requests
+let router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

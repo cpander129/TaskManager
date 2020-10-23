@@ -62,6 +62,47 @@ router.get('/delete/:_id', (req, res, next) => {
     });
 });
 
-
+//GET tasks/edit/... populate edit form with existing task values
+router.get('/edit/:_id', (req, res, next) => {
+    //store the selected id in a local variable
+    var _id = req.params._id;
+    //Use the selected id to look up the matching document
+    Task.findById(_id, (err, tasks) => {
+        if (err) {
+            console.log(err);
+            res.end(err);
+        }
+        else {
+            res.render('tasks/edit', {
+                tasks: tasks
+            });
+        }
+    })
+});
+//POST /tasks/edit/:_id -> update selected task document
+router.post('/edit/:_id', (req, res, next) => {
+    var _id = req.params._id;
+    //parse checkbox to a bool
+    var complete = false;
+    if (req.body.complete == "on"){
+        complete = true;
+    }
+    //instantiate a task Object with the new values from the submission
+    var task = new Task({
+        _id: _id,
+        name: req.body.name,
+        priority: req.body.priority,
+        complete: complete
+    });
+    Task.update({_id: _id}, task, (err) => {
+        if (err) {
+            console.log(err);
+            res.end(err);
+        }
+        else {
+            res.redirect('/tasks');
+        }
+    });
+});
 //exposes this file as public
 module.exports = router;

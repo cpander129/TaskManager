@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\config",
+    "\\models",
     "\\routes",
-    "\\views"
+    "\\views",
+    "\\views\\tasks"
   ],
-  "SelectedNode": "\\app.js",
+  "SelectedNode": "\\routes\\tasks.js",
   "PreviewInSolutionExplorer": false
 }

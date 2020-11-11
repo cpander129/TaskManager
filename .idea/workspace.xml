@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="23eb5161-931c-4421-81ce-cd8a26260a72" name="Default Changelist" comment="var to let" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jHjDEY7M9skduVnWEpFYCnQ2pG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/javascripts" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\School\JS Web Dev\Apps\F20TaskManager\public\javascripts" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23eb5161-931c-4421-81ce-cd8a26260a72" name="Default Changelist" comment="" />
+      <created>1603467789603</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603467789603</updated>
+      <workItem from="1603467790943" duration="7848000" />
+    </task>
+    <task id="LOCAL-00001" summary="Jquery install">
+      <created>1603470216882</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603470216882</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Delete functionality">
+      <created>1603471409336</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603471409336</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Edit functionality">
+      <created>1603475208742</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603475208742</updated>
+    </task>
+    <task id="LOCAL-00004" summary="var to let">
+      <created>1603475374732</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603475374732</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Jquery install" />
+    <MESSAGE value="Delete functionality" />
+    <MESSAGE value="Edit functionality" />
+    <MESSAGE value="var to let" />
+    <option name="LAST_COMMIT_MESSAGE" value="var to let" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="670" y="102" key="SettingsEditor" timestamp="1603469123344">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="670" y="102" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1603469123344" />
+    <state x="72" y="276" key="Vcs.Push.Dialog.v2" timestamp="1603475377218">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="72" y="276" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1603475377218" />
+    <state x="143" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1603469074484">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="143" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603469074484" />
+  </component>
+</project>

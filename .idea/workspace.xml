@@ -19,7 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23eb5161-931c-4421-81ce-cd8a26260a72" name="Default Changelist" comment="var to let" />
+    <list default="true" id="23eb5161-931c-4421-81ce-cd8a26260a72" name="Default Changelist" comment="var to let">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/.jscsrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/bin/postinstall.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/bin/postinstall.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/config/load.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/config/load.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/match.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/match.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/run.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/run.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/watch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/javascripts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Portfolio" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -58,6 +71,11 @@
       <option name="presentableId" value="Default" />
       <updated>1603467789603</updated>
       <workItem from="1603467790943" duration="7848000" />
+      <workItem from="1605106339964" duration="53000" />
+      <workItem from="1605107153158" duration="1272000" />
+      <workItem from="1605204246299" duration="2346000" />
+      <workItem from="1605547186070" duration="2238000" />
+      <workItem from="1605888202728" duration="2742000" />
     </task>
     <task id="LOCAL-00001" summary="Jquery install">
       <created>1603470216882</created>
@@ -103,6 +121,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Jquery install" />
@@ -112,6 +131,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="var to let" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1220" y="298" key="FileChooserDialogImpl" timestamp="1605555776441">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1220" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1605555776441" />
     <state x="670" y="102" key="SettingsEditor" timestamp="1603469123344">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

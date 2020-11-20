@@ -4,10 +4,16 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//Routes
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 //Add new Task Controller (week 5)
 var tasksRouter = require('./routes/tasks');
+
+//Ref for Auth
+const passport = require('passport');
+const session = require('express-session');
+//const localStrategy = require('passport-local').Strategy;
 
 var app = express();
 
@@ -24,6 +30,26 @@ mongoose.connect(globals.db,
         }).catch(() => {
             console.log('Connection Error')
         });
+
+//Passport initialization
+//1. Configure app to manage sessions
+app.use(session({
+    secret: 'TaskManagerSecret',
+    resave: true,
+    saveUninitialized: false
+}));
+
+//2. Set up Passport
+app.use(passport.initialize());
+app.use(passport.session());
+
+//3. Link Passport to User Model
+const User = require('./models/user')
+passport.use(User.createStrategy());
+
+//4. Set up Passport to read/write user data to the session object
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

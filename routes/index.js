@@ -9,12 +9,19 @@ const User = require('../models/user');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('index', {title: 'Task Manager'});
+    res.render('index', {
+        title: 'Task Manager',
+        user: req.user
+    });
 });
 
 /* GET about page. */
 router.get('/about', (req, res, next) => {
-    res.render('about', {message: 'Content from the controller goes here'});
+    res.render('about', {
+        title: 'About Us',
+        message: 'Content from the controller goes here',
+        user: req.user
+    });
 });
 
 // GET register
@@ -60,6 +67,13 @@ router.post('/login', passport.authenticate('local', {
     failureRedirect: '/login',
     failureMessage: 'Invalid Login'
 }))
+
+//GET logout
+router.get('/logout', (req, res, next) => {
+    //Call passport built in logout method
+    req.logout();
+    res.redirect('/login');
+})
 
 //exposes this file as public
 module.exports = router;

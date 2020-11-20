@@ -6,8 +6,20 @@ let router = express.Router();
 //Reference the Task model
 const Task = require('../models/task');
 
+//Use Passport to check our auth
+const passport = require('passport');
+
+//Auth check function to be called for each route
+function isLoggedIn(req, res, next){
+    //If user has logged in, call next which will just continue execution
+    if(req.isAuthenticated()){
+        return next()
+    }
+    res.redirect('/login');
+}
+
 /* GET Task Index View. */
-router.get('/', function (req, res, next) {
+router.get('/', isLoggedIn, (req, res, next) => {
 
     //use the task model to fetch a list of tasks and pass these to thee view for display
     //If an error occurs, the error parameter will be filled
@@ -19,19 +31,22 @@ router.get('/', function (req, res, next) {
         }
         else {
             res.render('tasks/index', {
-                tasks: tasks
+                tasks: tasks,
+                user: req.user
             });
 
         }
     })
 });
 //GET tasks add view
-router.get('/add', (req, res, next) => {
-    res.render('tasks/add')
+router.get('/add', isLoggedIn, (req, res, next) => {
+    res.render('tasks/add', {
+        user: req.user
+    })
 });
 
 //POST tasks/add form submission
-router.post('/add', (req, res, next) => {
+router.post('/add', isLoggedIn, (req, res, next) => {
     //Use MONGOOSE to try to save a new task object
     Task.create({
         name: req.body.name,
@@ -47,7 +62,7 @@ router.post('/add', (req, res, next) => {
     })
 });
 //GET tasks/delete/ - colon in the path represents a URL parameter
-router.get('/delete/:_id', (req, res, next) => {
+router.get('/delete/:_id', isLoggedIn, (req, res, next) => {
     //store the selected id in a local variable
     let _id = req.params._id;
     //Use Mongoose to delete the selected document from the DB
@@ -63,7 +78,7 @@ router.get('/delete/:_id', (req, res, next) => {
 });
 
 //GET tasks/edit/... populate edit form with existing task values
-router.get('/edit/:_id', (req, res, next) => {
+router.get('/edit/:_id', isLoggedIn, (req, res, next) => {
     //store the selected id in a local variable
     let _id = req.params._id;
     //Use the selected id to look up the matching document
@@ -74,13 +89,14 @@ router.get('/edit/:_id', (req, res, next) => {
         }
         else {
             res.render('tasks/edit', {
-                tasks: tasks
+                tasks: tasks,
+                user: req.user
             });
         }
     })
 });
 //POST /tasks/edit/:_id -> update selected task document
-router.post('/edit/:_id', (req, res, next) => {
+router.post('/edit/:_id', isLoggedIn, (req, res, next) => {
     let _id = req.params._id;
     //parse checkbox to a bool
     let complete = false;

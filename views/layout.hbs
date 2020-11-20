@@ -3,8 +3,8 @@
 <head>
     <title>{{title}}</title>
     <!--Add Bootstrap-->
-    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
 </head>
 <body>
 <!--https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp-->
@@ -23,15 +23,28 @@
             <li class="nav-item">
                 <a class="nav-link" href="/about">About</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/tasks">Tasks</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/register">Register</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/login">Login</a>
-            </li>
+            {{#if user}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/tasks">Tasks</a>
+                </li>
+            {{/if}}
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            {{#if user}}
+                <li class="nav nav-item">
+                    <a class="nav-link">{{user.username}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Logout</a>
+                </li>
+            {{else}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+            {{/if}}
         </ul>
     </div>
 </nav>

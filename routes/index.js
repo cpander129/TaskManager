@@ -13,5 +13,15 @@ router.get('/about', (req, res, next) => {
     res.render('about', { message: 'Content from the controller goes here' });
 });
 
+// GET register
+router.get('/register', (req, res, next) => {
+    res.render('register', { title: 'Register' });
+});
+
+// GET login
+router.get('/login', (req, res, next) => {
+    res.render('login', { title: 'Login' });
+});
+
 //exposes this file as public
 module.exports = router;

@@ -19,18 +19,29 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23eb5161-931c-4421-81ce-cd8a26260a72" name="Default Changelist" comment="var to let">
+    <list default="true" id="23eb5161-931c-4421-81ce-cd8a26260a72" name="Default Changelist" comment="Reverse load order of jquery and bootstrap">
+      <change afterPath="$PROJECT_DIR$/views/login.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/register.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/.jscsrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/bin/postinstall.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/bin/postinstall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/config/load.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/config/load.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/match.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/match.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/run.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/run.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/lib/monitor/watch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/chokidar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/chokidar/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/debug/dist/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nodemon/node_modules/debug/src/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nodemon/node_modules/debug/src/node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pupa/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pupa/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pupa/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pupa/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readdirp/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readdirp/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readdirp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readdirp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/registry-auth-token/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/registry-auth-token/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/registry-auth-token/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/registry-auth-token/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/registry-auth-token/test/auth-token.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/registry-auth-token/test/registry-url.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/term-size/license" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/term-size/license" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/term-size/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/term-size/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/term-size/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/term-size/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +86,7 @@
       <workItem from="1605107153158" duration="1272000" />
       <workItem from="1605204246299" duration="2346000" />
       <workItem from="1605547186070" duration="2238000" />
-      <workItem from="1605888202728" duration="2742000" />
+      <workItem from="1605888202728" duration="3943000" />
     </task>
     <task id="LOCAL-00001" summary="Jquery install">
       <created>1603470216882</created>
@@ -105,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603475374732</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Reverse load order of jquery and bootstrap">
+      <created>1605899640912</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605899640912</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +146,8 @@
     <MESSAGE value="Delete functionality" />
     <MESSAGE value="Edit functionality" />
     <MESSAGE value="var to let" />
-    <option name="LAST_COMMIT_MESSAGE" value="var to let" />
+    <MESSAGE value="Reverse load order of jquery and bootstrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reverse load order of jquery and bootstrap" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1220" y="298" key="FileChooserDialogImpl" timestamp="1605555776441">
@@ -139,10 +158,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="670" y="102" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1603469123344" />
-    <state x="72" y="276" key="Vcs.Push.Dialog.v2" timestamp="1603475377218">
+    <state x="72" y="276" key="Vcs.Push.Dialog.v2" timestamp="1605899646037">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="72" y="276" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1603475377218" />
+    <state x="72" y="276" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1605899646037" />
     <state x="143" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1603469074484">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

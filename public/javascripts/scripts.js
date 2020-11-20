@@ -20,6 +20,7 @@ function comparePasswords()
     else
     {
        psMsg.innerHTML = "";
+       psMsg.className = "";
        return true;
     }
 }

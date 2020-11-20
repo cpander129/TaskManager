@@ -75,5 +75,19 @@ router.get('/logout', (req, res, next) => {
     res.redirect('/login');
 })
 
+// GET /google
+//Check if User is already logged into Google. If not then invoke Google Sign-in
+router.get('/google', passport.authenticate('google', {
+    scope:['profile']
+}),
+    (req, res) => {});
+//Get /google/callback
+router.get('/google/callback', passport.authenticate('google', {
+    failureRedirect: '/login'
+}),
+    (req, res) => {
+        res.redirect('/tasks');
+    });
+
 //exposes this file as public
 module.exports = router;

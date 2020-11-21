@@ -78,13 +78,25 @@ router.get('/logout', (req, res, next) => {
 // GET /google
 //Check if User is already logged into Google. If not then invoke Google Sign-in
 router.get('/google', passport.authenticate('google', {
-    scope:['profile']
-}),
+        scope:['profile']
+    }),
     (req, res) => {});
 //Get /google/callback
 router.get('/google/callback', passport.authenticate('google', {
-    failureRedirect: '/login'
-}),
+        failureRedirect: '/login'
+    }),
+    (req, res) => {
+        res.redirect('/tasks');
+    });
+
+// GET /Facebook
+//Check if User is already logged into Facebook. If not then invoke facebook Sign-in
+router.get('/facebook', passport.authenticate('facebook'),
+    (req, res) => {});
+//Get /facebook/callback
+router.get('/facebook/callback', passport.authenticate('facebook', {
+        failureRedirect: '/login'
+    }),
     (req, res) => {
         res.redirect('/tasks');
     });
